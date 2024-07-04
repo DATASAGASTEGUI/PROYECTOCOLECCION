@@ -49,7 +49,10 @@ public class Principal {
         nombres_ts.add("Carlos");
         nombres_ts.add("Luis");
         nombres_ts.add("Arturo");
-
+     //RECORRER TREESET POR ELEMENTO
+        for(String elemento: nombres_ts) {
+            System.out.println(elemento);
+        }
     }
     
 }
