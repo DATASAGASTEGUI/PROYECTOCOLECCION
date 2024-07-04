@@ -8,7 +8,8 @@ import java.util.TreeSet;
 public class Principal {
 
     public static void main(String[] args) {
-       ejemplo1();
+       //ejemplo1();
+       ejemplo2();
         
     }
     
@@ -38,6 +39,20 @@ public class Principal {
         for(int i=0; i<enteros_al.size(); i++) {
             System.out.print(enteros_al.get(i) + "  "); 
         }        
+    }
+    
+    //CREAR UN TREESET DE TIPO CADENA
+    public static void ejemplo2() {
+        Set<String> nombres_ts = new TreeSet<>();
+        nombres_ts.add("Luis");
+        nombres_ts.add("Miguel");
+        nombres_ts.add("Carlos");
+        nombres_ts.add("Luis");
+        nombres_ts.add("Arturo");
+        //RECORRER TREESET POR ELEMENTO
+        for(String elemento: nombres_ts) {
+            System.out.println(elemento);
+        }
     }
     
 }
